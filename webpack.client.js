@@ -16,10 +16,14 @@ module.exports = {
 
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|ico)$/i,
         use: [
           {
             loader: 'file-loader',
+            options: {
+              limit: 50,
+              name: 'assets/[name].[ext]'//相对于path的路径
+            }
           },
         ],
       },

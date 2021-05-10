@@ -21,15 +21,14 @@ app.get("/", (req, res) => {
       <html>
         <head>
           <title>React SSR Spike</title>
-          <link rel="shortcut icon" href="favicon.ico" />
+          <link rel="shortcut icon" href="assets/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-          <link rel="manifest" href="/manifest.json">
           <link rel="preconnect" href="https://fonts.gstatic.com">
           <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
-          ${styles}
+          ${ styles }
         </head>
         <body>
-          <div id="root">${content}</div>
+          <div id="root">${ content }</div>
           <script src="bundle.js"></script>
         </body>
       </html>
